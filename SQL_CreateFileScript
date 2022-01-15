@@ -1,0 +1,9 @@
+create database if not exists favorite_food;
+use favorite_food;
+Drop table if exists favorite_food;
+Create table favorite_food(
+food_name varchar(30) not null,
+food_origin varchar(30) not null,
+food_id int(11) not null auto_increment,
+Primary key(food_id)
+);
